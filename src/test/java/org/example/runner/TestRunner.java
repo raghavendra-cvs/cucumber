@@ -9,7 +9,7 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "org.example.steps",
-        plugin={"pretty","html:target/cucumber-reports.html"}
+        plugin={"pretty","json:target/cucumber-report/cucumber.json"}
 )
 public class TestRunner {
 }
